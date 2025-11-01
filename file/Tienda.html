@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Tienda - Tlatolli Studios</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+  <link href="../css/core.css" rel="stylesheet">
+  <link href="../css/tienda.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="logo d-flex align-items-center">
+                <img src="../img/logo.png" alt="Tlatolli Studios">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#"><i class="fa fa-gamepad"></i> Proyectos</a>
+                        <ul>
+                            <li><a href="Tonalli_Ometeotl.html">Tonalli Ometeotl</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="Ost.html"><i class="fa fa-music"></i> Ost</a></li>
+                    <li><a class="nav-link active" href="Tienda.html"><i class="fas fa-store"></i> Tienda</a></li>
+                    <li><a class="nav-link" href="Noticias.html"><i class="fa fa-newspaper"></i> Noticias</a></li>
+                    <li><a class="nav-link" href="Contactos.html"><i class="fas fa-phone-alt"></i> Contactos</a></li>
+                </ul>
+                <i class="fa fa-bars mobile-nav-toggle"></i>
+            </nav>  
+        </div>
+    </header>
+
+    <div class="tienda-main-container">
+        <div class="tienda-content">
+            <div class="tienda-page-header">
+                <h1 class="tienda-page-title">Tienda Oficial</h1>
+                <p class="tienda-page-subtitle">Productos inspirados en nuestra cultura</p>
+            </div>
+
+            <!-- Carrito Flotante -->
+            <div class="tienda-cart-floating" id="cartFloating">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="tienda-cart-count" id="cartCount">0</span>
+            </div>
+
+            <!-- Filtros -->
+            <div class="tienda-filters">
+                <button class="tienda-filter-btn active" data-filter="all">Todos</button>
+                <button class="tienda-filter-btn" data-filter="ropa">Ropa</button>
+                <button class="tienda-filter-btn" data-filter="accesorios">Accesorios</button>
+                <button class="tienda-filter-btn" data-filter="arte">Arte</button>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div class="tienda-grid" id="productGrid">
+                <!-- Producto 1 -->
+                <div class="tienda-product-card" data-category="ropa" data-id="1">
+                    <div class="tienda-product-image">
+                        <img src="../img/product1.jpeg" alt="Playera Tlatolli Studios" 
+                             onload="this.classList.add('loaded'); this.parentElement.classList.remove('loading')">
+                        <div class="tienda-product-badge nuevo">Nuevo</div>
+                    </div>
+                    <div class="tienda-product-info">
+                        <h3>Playera Tlatolli Studios</h3>
+                        <p>Playera de algodón premium con diseño exclusivo inspirado en nuestra cultura</p>
+                        <div class="tienda-product-price">$350 <span class="tienda-price-mxn">MXN</span></div>
+                        <div class="tienda-product-actions">
+                            <button class="tienda-add-to-cart" data-product-id="1">
+                                <i class="fas fa-cart-plus"></i>
+                                Agregar al carrito
+                            </button>
+                            <button class="tienda-quick-view" data-product-id="1">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="tienda-product-card" data-category="arte" data-id="2">
+                    <div class="tienda-product-image">
+                        <img src="../img/product2.jpeg" alt="Poster Tonalli Ometeotl"
+                             onload="this.classList.add('loaded'); this.parentElement.classList.remove('loading')">
+                        <div class="tienda-product-badge popular">Popular</div>
+                    </div>
+                    <div class="tienda-product-info">
+                        <h3>Poster Arte Conceptual</h3>
+                        <p>Poster de alta calidad 50x70 cm con arte exclusivo del juego</p>
+                        <div class="tienda-product-price">$200 <span class="tienda-price-mxn">MXN</span></div>
+                        <div class="tienda-product-actions">
+                            <button class="tienda-add-to-cart" data-product-id="2">
+                                <i class="fas fa-cart-plus"></i>
+                                Agregar al carrito
+                            </button>
+                            <button class="tienda-quick-view" data-product-id="2">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="tienda-product-card" data-category="accesorios" data-id="3">
+                    <div class="tienda-product-image">
+                        <div class="tienda-image-placeholder">
+                            <i class="fas fa-sticky-note"></i>
+                            <span>Pack de Stickers</span>
+                        </div>
+                    </div>
+                    <div class="tienda-product-info">
+                        <h3>Pack de Stickers</h3>
+                        <p>Set de 5 stickers exclusivos con diseños de nuestros personajes</p>
+                        <div class="tienda-product-price">$120 <span class="tienda-price-mxn">MXN</span></div>
+                        <div class="tienda-product-actions">
+                            <button class="tienda-add-to-cart" data-product-id="3">
+                                <i class="fas fa-cart-plus"></i>
+                                Agregar al carrito
+                            </button>
+                            <button class="tienda-quick-view" data-product-id="3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="tienda-product-card" data-category="accesorios" data-id="4">
+                    <div class="tienda-product-image">
+                        <div class="tienda-image-placeholder">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Taza Cerámica</span>
+                        </div>
+                    </div>
+                    <div class="tienda-product-info">
+                        <h3>Taza Cerámica Premium</h3>
+                        <p>Taza de cerámica de alta calidad con logo grabado y diseño exclusivo</p>
+                        <div class="tienda-product-price">$180 <span class="tienda-price-mxn">MXN</span></div>
+                        <div class="tienda-product-actions">
+                            <button class="tienda-add-to-cart" data-product-id="4">
+                                <i class="fas fa-cart-plus"></i>
+                                Agregar al carrito
+                            </button>
+                            <button class="tienda-quick-view" data-product-id="4">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Próximamente -->
+            <div class="tienda-coming-soon">
+                <h3>🚀 Próximamente</h3>
+                <p>Estamos trabajando en más productos inspirados en nuestra cultura. ¡Mantente al tanto!</p>
+                <div class="tienda-newsletter">
+                    <input type="email" placeholder="Tu correo para novedades..." class="tienda-newsletter-input">
+                    <button class="tienda-newsletter-btn">Notificarme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div class="tienda-cart-modal" id="cartModal">
+        <div class="tienda-cart-content">
+            <div class="tienda-cart-header">
+                <h3>🛒 Tu Carrito</h3>
+                <button class="tienda-cart-close" id="closeCart">&times;</button>
+            </div>
+            <div class="tienda-cart-items" id="cartItems">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+                <div class="tienda-cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="tienda-cart-footer">
+                <div class="tienda-cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0 MXN</span>
+                </div>
+                <button class="tienda-checkout-btn" id="checkoutBtn">
+                    <i class="fas fa-credit-card"></i>
+                        Proceder al Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Vista Rápida -->
+    <div class="tienda-quickview-modal" id="quickviewModal">
+        <div class="tienda-quickview-content">
+            <button class="tienda-quickview-close" id="closeQuickview">&times;</button>
+            <div class="tienda-quickview-body" id="quickviewBody">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tienda.js"></script>
+</body>
+</html>

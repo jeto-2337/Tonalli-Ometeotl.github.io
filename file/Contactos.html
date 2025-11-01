@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Contactos - Tlatolli Studios</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+  <link href="../css/core.css" rel="stylesheet">
+  <link href="../css/contactos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="logo d-flex align-items-center">
+                <img src="../img/logo.png" alt="Tlatolli Studios">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#"><i class="fa fa-gamepad"></i> Proyectos</a>
+                        <ul>
+                            <li><a href="Tonalli_Ometeotl.html">Tonalli Ometeotl</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="Ost.html"><i class="fa fa-music"></i> Ost</a></li>
+                    <li><a class="nav-link" href="Tienda.html"><i class="fas fa-store"></i> Tienda</a></li>
+                    <li><a class="nav-link" href="Noticias.html"><i class="fa fa-newspaper"></i> Noticias</a></li>
+                    <li><a class="nav-link active" href="Contactos.html"><i class="fas fa-phone-alt"></i> Contactos</a></li>
+                </ul>
+                <i class="fa fa-bars mobile-nav-toggle"></i>
+            </nav>  
+        </div>
+    </header>
+
+    <div class="contact-main-container">
+        <div class="contact-content">
+            <div class="contact-page-header">
+                <h1 class="contact-page-title">Contáctanos</h1>
+                <p class="contact-page-subtitle">Estamos aquí para escucharte y conectar contigo</p>
+            </div>
+
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-envelope contact-icon"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@tlatollistudios.com</p>
+                    <span class="contact-response-time">Respuesta en 24 horas</span>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-phone contact-icon"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p>+52 55 1234 5678</p>
+                    <span class="contact-response-time">Lun-Vie: 9:00 - 18:00</span>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                    </div>
+                    <h3>Ubicación</h3>
+                    <p>Ciudad de México, México</p>
+                    <span class="contact-response-time">Estudio principal</span>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-clock contact-icon"></i>
+                    </div>
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes</p>
+                    <span class="contact-response-time">9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="contact-form-container">
+                    <div class="contact-form-header">
+                        <h2>Envíanos un mensaje</h2>
+                        <p>¿Tienes alguna pregunta, sugerencia o quieres colaborar con nosotros? ¡Nos encantaría saber de ti!</p>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <input type="text" id="asunto" class="form-control" placeholder="¿Sobre qué quieres hablar?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" class="form-control" placeholder="Cuéntanos más..." rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tipo-contacto">Tipo de consulta</label>
+                            <select id="tipo-contacto" class="form-control">
+                                <option value="">Selecciona una opción</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="prensa">Prensa</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="general">Consulta general</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="contact-btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-social-section">
+                    <h3>Síguenos en redes sociales</h3>
+                    <p>Mantente al día con nuestros últimos proyectos y novedades</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
